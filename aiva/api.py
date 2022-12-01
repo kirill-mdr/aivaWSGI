@@ -6,6 +6,7 @@ api.py
 
 from flask import Flask, Blueprint, jsonify, request
 from tensorflow import keras
+from os import path
 
 api = Blueprint('api', __name__)
 
@@ -87,7 +88,7 @@ def get_options():
 @api.route('/predict', methods=['POST'])
 def predict():
     request_data = request.get_json()
-    model = keras.models.load_model('Model')
+    model = keras.models.load_model(path.dirname(path.abspath(__file__)) + '/Model')
 
     job_Data_Analyst, job_Data_Engineer, job_Data_Scientist, job_Machine_Learning_Engineer = 1, 1, 1, 1  # Job title
     Experience_level_EN, Experience_level_EX, Experience_level_MI, Experience_level_SE = 1, 1, 1, 1  # Exp level
