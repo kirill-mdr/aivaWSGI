@@ -4,4 +4,5 @@
 """
 
 class BaseConfig(object):
-    DEBUG = True
+    DEBUG = False
+    THREADED = False
