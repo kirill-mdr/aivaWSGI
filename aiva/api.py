@@ -140,7 +140,7 @@ def get_graph_values():
             salary_mean.append(DF.loc[DF['work_year'] == i, 'salary_in_usd'].mean())
         return (DF['work_year'].unique().tolist(), salary_mean)
 
-    params = ['Data Analyst', 'Data Engineer', 'Data Scientist', 'Machine Learning Engineer']
+    params = ['Data Analyst', 'Data Engineer', 'Data Scientist', 'ML Engineer']
     if request.args.get('spec') in params:
         j = request.args.get('spec')
     else:
