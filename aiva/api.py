@@ -23,7 +23,7 @@ def get_options():
                 'Data Analyst',
                 'Data Engineer',
                 'Data Scientist',
-                'Machine Learning Engineer',
+                'ML Engineer',
             ],
         },
         {
