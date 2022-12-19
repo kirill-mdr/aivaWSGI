@@ -24,7 +24,6 @@ def get_options():
                 'Data Engineer',
                 'Data Scientist',
                 'Machine Learning Engineer',
-                'Все',
             ],
         },
         {
@@ -35,7 +34,6 @@ def get_options():
                 'Middle',
                 'Senior',
                 'Director',
-                'Все',
             ]
         },
         {
@@ -57,7 +55,6 @@ def get_options():
                 'Офис',
                 'Гибрид',
                 'Удаленка',
-                'Все',
             ]
 
         },
@@ -68,7 +65,6 @@ def get_options():
                 '2020',
                 '2021',
                 '2022',
-                'Все',
             ]
 
         },
@@ -79,7 +75,6 @@ def get_options():
                 'Большая',
                 'Средняя',
                 'Маленькая',
-                'Все',
             ]
 
         },
