@@ -137,7 +137,7 @@ def get_graph_values():
         DF = DF[(DF.job_title == job)]
         salary_mean = []
         for i in range(2020, 2020 + int(DF['work_year'].value_counts().count())):
-            salary_mean.append(DF.loc[DF['work_year'] == i, 'salary_in_usd'].mean())
+            salary_mean.append(int(DF.loc[DF['work_year'] == i, 'salary_in_usd'].mean()))
         return (DF['work_year'].unique().tolist(), salary_mean)
 
     params = ['Data Analyst', 'Data Engineer', 'Data Scientist', 'ML Engineer']
