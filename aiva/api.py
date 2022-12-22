@@ -93,30 +93,37 @@ def predict():
     Company_size_L, Company_size_M, Company_size_S = 1, 1, 1  # Company Size
 
     if request_data['spec']:
-        job_Data_Analyst, job_Data_Engineer, job_Data_Scientist, job_Machine_Learning_Engineer = request_data['spec'][
-                                                                                                     0], \
-                                                                                                 request_data['spec'][
-                                                                                                     1], \
-                                                                                                 request_data['spec'][
-                                                                                                     2], \
-                                                                                                 request_data['spec'][3]
+        job_Data_Analyst = request_data['spec'][0]
+        job_Data_Engineer = request_data['spec'][1]
+        job_Data_Scientist = request_data['spec'][2]
+        job_Machine_Learning_Engineer = request_data['spec'][3]
+
     if request_data['lvl']:
-        Experience_level_EN, Experience_level_EX, Experience_level_MI, Experience_level_SE = request_data['lvl'][0], \
-                                                                                             request_data['lvl'][1], \
-                                                                                             request_data['lvl'][2], \
-                                                                                             request_data['lvl'][3]
+        Experience_level_EN = request_data['lvl'][0]
+        Experience_level_EX = request_data['lvl'][3]
+        Experience_level_MI = request_data['lvl'][1]
+        Experience_level_SE = request_data['lvl'][2]
+
     if request_data['country']:
-        Employee_residence_Canada, Employee_residence_India, Employee_residence_UK, Employee_residence_USA = \
-            request_data['country'][0], request_data['country'][1], request_data['country'][2], request_data['country'][
-                3]
+        Employee_residence_Canada = request_data['country'][0]
+        Employee_residence_India = request_data['country'][1]
+        Employee_residence_UK = request_data['country'][2]
+        Employee_residence_USA = request_data['country'][3]
+
     if request_data['remote']:
-        Remote_ratio_0, Remote_ratio_50, Remote_ratio_100 = request_data['remote'][0], request_data['remote'][1], \
-                                                            request_data['remote'][2]
+        Remote_ratio_0 = request_data['remote'][0]
+        Remote_ratio_50 = request_data['remote'][1]
+        Remote_ratio_100 = request_data['remote'][2]
+
     if request_data['year']:
-        Year_2020, Year_2021, Year_2022 = request_data['year'][0], request_data['year'][1], request_data['year'][2]
+        Year_2020 = request_data['year'][0]
+        Year_2021 = request_data['year'][1]
+        Year_2022 = request_data['year'][2]
+
     if request_data['size']:
-        Company_size_L, Company_size_M, Company_size_S = request_data['size'][0], request_data['size'][1], \
-                                                         request_data['size'][2]
+        Company_size_L = request_data['size'][0]
+        Company_size_M = request_data['size'][1]
+        Company_size_S = request_data['size'][2]
 
     to_predict = [[job_Data_Analyst, job_Data_Engineer, job_Data_Scientist, job_Machine_Learning_Engineer,
                    Experience_level_EN, Experience_level_EX, Experience_level_MI, Experience_level_SE,
