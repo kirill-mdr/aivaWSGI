@@ -102,9 +102,9 @@ def predict():
                                                                                                  request_data['spec'][3]
     if request_data['lvl']:
         Experience_level_EN, Experience_level_EX, Experience_level_MI, Experience_level_SE = request_data['lvl'][0], \
+                                                                                             request_data['lvl'][1], \
                                                                                              request_data['lvl'][2], \
-                                                                                             request_data['lvl'][3], \
-                                                                                             request_data['lvl'][1]
+                                                                                             request_data['lvl'][3]
     if request_data['country']:
         Employee_residence_Canada, Employee_residence_India, Employee_residence_UK, Employee_residence_USA = \
             request_data['country'][0], request_data['country'][1], request_data['country'][2], request_data['country'][
